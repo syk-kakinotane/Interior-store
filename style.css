@@ -1,5 +1,23 @@
+body {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  min-height: 100vh;
+}
+
 img {
   width: 100%;
+}
+
+a {
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+dt {
+  font-weight: normal;
 }
 
 .wrapper {
@@ -7,6 +25,11 @@ img {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
 }
 
 .header {
@@ -17,6 +40,7 @@ img {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 10;
@@ -92,9 +116,91 @@ img {
   transform: rotate(45deg);
 }
 
+.main {
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px 40px;
+}
+
+.productText {
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+
+.linkText {
+  display: block;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footerMenu {
+  display: flex;
+  font-size: 0.75rem;
+}
+
+.footerItem {
+  margin-right: 30px;
+}
+
+.copyright {
+  font-size: 0.6rem;
+}
+
+.pageTitle {
+  margin-bottom: 30px;
+}
+
+.productContainer {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.productLeft {
+  width: 50%;
+}
+
+.productRight {
+  width: 42%;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dt {
+  width: 40%;
+}
+
+dd {
+  width: 60%;
+}
+
+.aboutText {
+  max-width: 600px;
+}
+
+.aboutText .text {
+  line-height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
