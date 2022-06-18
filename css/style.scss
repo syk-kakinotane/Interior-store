@@ -202,13 +202,36 @@ dd{
     width: 60%;
 }
 
-.aboutText{
+.contents{
     max-width: 600px;
 }
 
 .aboutText .text{
     line-height:2rem;
 
+}
+.company dl{
+    margin-bottom: 20px;
+}
+.company dt{
+    padding: 20px 10px;
+    border-bottom: gainsboro solid 1px;
+
+}
+.company dd{
+    padding: 20px 10px;
+    border-bottom: gainsboro solid 1px;
+}
+
+.company dd:last-of-type {
+    border-bottom: none;
+}
+.company dt:last-of-type {
+    border-bottom: none;
+}
+
+.map{
+    filter: grayscale(100%);
 }
 
 
