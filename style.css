@@ -19,6 +19,7 @@ a:hover {
 
 dt {
   font-weight: normal;
+  width: 100%;
 }
 
 .wrapper {
@@ -51,7 +52,6 @@ dt {
   width: 30px;
   height: 30px;
   position: relative;
-  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -91,6 +91,7 @@ dt {
   left: 0;
   z-index: 20;
   opacity: 0;
+  transition: all 0.5s;
   visibility: hidden;
 }
 
@@ -125,7 +126,6 @@ dt {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 40px 40px;
 }
 
@@ -148,6 +148,7 @@ dt {
   margin-bottom: 20px;
   left: 0;
   right: 0;
+  bottom: 0;
 }
 
 .footerMenu {
@@ -182,8 +183,17 @@ dt {
   width: 42%;
 }
 
-.text {
+.itemText {
+  line-height: 1.3rem;
   margin-bottom: 30px;
+}
+
+.itemDt {
+  line-height: 1.3rem;
+}
+
+.itemDd {
+  line-height: 1.3rem;
 }
 
 dl {
@@ -192,19 +202,20 @@ dl {
 }
 
 dt {
-  width: 40%;
+  width: 30%;
 }
 
 dd {
-  width: 60%;
+  width: 70%;
 }
 
 .contents {
   max-width: 600px;
 }
 
-.aboutText .text {
+.aboutText {
   line-height: 2rem;
+  margin-bottom: 30px;
 }
 
 .company dl {
@@ -231,6 +242,59 @@ dd {
 
 .map {
   filter: grayscale(100%);
+}
+
+.productPages {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pageNumber {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .company dl {
+    flex-direction: column;
+  }
+
+  .company dt {
+    padding-bottom: 5px;
+    border-bottom: none;
+    width: 100%;
+  }
+
+  .company dd {
+    padding-bottom: 5px;
+    border-bottom: none;
+    width: 100%;
+  }
+
+  .footerMenu {
+    margin-bottom: 5px;
+  }
+
+  .productContainer {
+    flex-direction: column;
+  }
+
+  .productLeft {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .productRight {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
