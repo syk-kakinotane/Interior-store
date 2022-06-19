@@ -59,6 +59,7 @@ dt {
 .hamburger span {
   display: block;
   position: absolute;
+  z-index: 20;
   width: 30px;
   height: 2px;
   background-color: #333;
@@ -95,26 +96,26 @@ dt {
   visibility: hidden;
 }
 
-.active {
+.naviOpened.active {
   visibility: visible;
   opacity: 1;
 }
 
-.inactive {
-  opacity: 0;
-}
-
-.active span:nth-child(1) {
+.closeBtn span:nth-child(1) {
   top: 40px;
   left: 15px;
-  background: #fff;
+  background: red;
   transform: rotate(-45deg);
+  position: relative;
+  z-index: 30;
 }
 
-.naviOpened .active span:nth-child(2) {
+.closeBtn span:nth-child(2) {
   top: 40px;
-  background: #fff;
+  background: red;
   transform: rotate(45deg);
+  position: relative;
+  z-index: 30;
 }
 
 .main {

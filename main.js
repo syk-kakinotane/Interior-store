@@ -3,9 +3,11 @@ const hamburger = document.getElementById("hamburger");
 const navi = document.getElementById("naviOpened");
 
 hamburger.addEventListener("click", function (){
-    navi.classList.toggle("active");   
+    navi.classList.toggle("active"); 
+    hamburger.classList.toggle("closeBtn");
 })
 
 navi.addEventListener("click", function (){
-    navi.classList.add("inactive");
+    navi.classList.toggle("active");
+    hamburger.classList.toggle("closeBtn");
 })    
