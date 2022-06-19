@@ -51,7 +51,7 @@ dt{
     width: 30px;
     height: 30px;
     position: relative;
-    //transition: all 0.5s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -73,8 +73,6 @@ dt{
     bottom: 10px;
 }
 
-
-
 .maviMenu{
     padding: 36px 50px;
 }
@@ -92,10 +90,10 @@ dt{
     top: 0;
     left: 0;
     z-index: 20;
+    visibility:hidden;
     opacity: 0;
     //transition: opacity 0.8s ease, visibility 0.8s ease;
     transition: all 0.5s;
-    visibility: hidden;
 }
 
 .naviOpened.active{

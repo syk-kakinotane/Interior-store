@@ -52,6 +52,7 @@ dt {
   width: 30px;
   height: 30px;
   position: relative;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -90,9 +91,9 @@ dt {
   top: 0;
   left: 0;
   z-index: 20;
+  visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
-  visibility: hidden;
 }
 
 .naviOpened.active {
